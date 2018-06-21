@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div>
+    <h1>
+      Welcome to {{ title }} by {{ author }}
+    </h1>
+  </div>
+  <div>
+    <app-my-component></app-my-component>
+  </div>
+  <div>
+    <button (click)="count = count + 1">Click me</button> {{ count }}
+  </div>
+  <div>
+    <img [src]="imgSource">
+  </div>
+  <div>
+    <input type="text"
+           [disabled]="enable">
+    <button (click)="enable = !enable">Enable or Disable</button>
+  </div>
+</div>
